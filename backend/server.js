@@ -19,7 +19,10 @@ app.use(helmet());
 
 // Allow frontend to talk to backend
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
+  origin: [
+    'http://localhost:5173',
+    'ecommerce-app-ten-sage.vercel.app', // replace with your actual Vercel URL
+  ],
   credentials: true,
 }));
 
